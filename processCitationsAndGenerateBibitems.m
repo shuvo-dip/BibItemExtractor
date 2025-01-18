@@ -131,8 +131,8 @@ function writeBibitem(bibItems, missingInfo, entry)
     missingFields = {};
 
     % Extract fields
-    authors = getField(entry, 'author', 'Unknown Author');
-    title = getField(entry, 'title', 'Unknown Title');
+    authors = getField(entry, 'author', '');
+    title = getField(entry, 'title', '');
     journal = getField(entry, 'journal', '');
     volume = getField(entry, 'volume', '');
     number = getField(entry, 'number', '');
